@@ -70,7 +70,7 @@ function decodeStreamMap(url_encoded_fmt_stream_map) {
 }
 
 function YoutubeVideo(youtubeId) {
-    var videoInfo = getWebsite('https://jsonp.afeld.me/?url=https://www.youtube.com/get_video_info?video_id=' + youtubeId);
+    var videoInfo = getWebsite('https://www.youtube.com/get_video_info?video_id=' + youtubeId);
     if (videoInfo === '') {
         reportError('There was an issue download the video info');
     }
